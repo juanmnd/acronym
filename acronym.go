@@ -14,9 +14,9 @@ func acronym(s []string) (acr string) {
 }
 
 func main() {
-	s := "Pan Galactic Gargle Blaster"
+	s := "Simple Test Of Pull Request"
 	if len(os.Args) > 1 {
 		s = strings.Join(os.Args, " ")
 	}
-	fmt.Println(acronym(strings.Fields(s)[1:]))
+	fmt.Println(acronym(strings.Fields(s)[:]))
 }
